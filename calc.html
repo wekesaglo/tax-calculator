@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/styles.css">
+<title>Income Tax</title>
+</head>
+<body>
+ 
+  <div class="split left">
+    <div class="centered">
+      <h2>INCOME TAX CALCULATOR</h2>
+     
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">PAY PERIOD</label>
+        <input class="form-check-input" type="checkbox" id="cb1" onclick="display1()">MONTH
+        <input class="form-check-input" type="checkbox" id="cb2" onclick="display2()">YEAR
+        <br> </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">BASIC SALARY IN KSH</label>
+        <input type="email" class="form-control" id="income">
+        <br>
+             </div>
+      <div class="col-md-8">
+        <label for="inputPassword4" class="form-label">BENEFITS (BONUS,ALLOWANCE)</label>
+        <input type="email" class="form-control" id="benefits"><br>
+      </div>
+      <div class="col-8">
+        <label for="inputEmail4" class="form-label">DEDUCT NSSF</label>
+        <input class="form-check-input" type="checkbox" id="cb3" onclick="display3()">YES
+        <input class="form-check-input" type="checkbox" id="cb4" onclick="display4()">NO
+        <br><br></div>
+      <div class="col-8">
+        <label for="inputEmail4" class="form-label">NSSF RATES</label>
+        <input class="form-check-input" type="checkbox" id="cb5">NEW NSSF RATES (TIERED)
+      </div>
+      <div class="col-8">
+     <input class="form-check-input" type="checkbox"  id="cb6" onclick="display3()">OLD NSSF RATES (KSH 200)<br><br>
+       </div> 
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">DEDUCT NHIF</label>
+        <input class="form-check-input" type="checkbox" id="cb7" onclick="display5()">YES
+        <input class="form-check-input" type="checkbox" id="cb8" onclick="display6()">NO
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" id="btn" onclick="display1(); display2();  display5();">CALCULATE</button>
+      </div>
+  </div>
+
+  </div>
+  <div class="split right">
+    <div class="centered">
+      <h1>RESULTS</h1> 
+     <p class="output" id="output"></p>
+     <p class="output" id="output1"></p>
+     <p class="output" id="output2"></p>
+     <p class="output" id="output3"></p>
+     <p class="output" id="output4"></p>
+     <p class="output" id="output5"></p>
+     <p class="output" id="output6"></p>
+     <p class="output" id="output7"></p>
+     <p class="output" id="output8"></p>
+     <p class="output" id="output9"></p>
+     <p class="output" id="output10"></p>
+     <p class="output" id="output11"></p>
+           
+    </div>
+  </div>
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+<script src="./assets/main.js"></script>
+</body>
+</html>
